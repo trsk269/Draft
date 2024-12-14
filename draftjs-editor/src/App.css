@@ -1,0 +1,101 @@
+/* Container for the entire editor */
+.editor-container {
+    width: 80%; /* Make the editor take up 80% of the screen width */
+    max-width: 900px; /* Limit the maximum width for larger screens */
+    margin: 50px auto; /* Center the editor vertically and horizontally */
+    padding: 20px; /* Add space inside the container */
+    background-color: #ffffff; /* Set a white background */
+    border-radius: 8px; /* Round the corners of the container */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+    font-family: 'Arial', sans-serif; /* Set the font family */
+    box-sizing: border-box; /* Include padding in width calculations */
+  }
+  
+  /* Styling for the title input field */
+  .editor-title {
+    width: 100%; /* Make the title input take full width of the container */
+    max-width: 850px; /* Limit the maximum width for larger screens */
+    padding: 15px; /* Add padding inside the input */
+    font-size: 1.5rem; /* Increase font size for readability */
+    border: 2px solid #ddd; /* Add a light gray border */
+    border-radius: 6px; /* Round the corners */
+    background-color: #f9f9f9; /* Set a light background color */
+    margin-bottom: 20px; /* Add spacing below the input */
+    transition: border-color 0.3s ease; /* Smooth transition for focus state */
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+  }
+  
+  /* Focus effect for the title input */
+  .editor-title:focus {
+    border-color: #4d9efb; /* Change border color on focus */
+    outline: none; /* Remove the default outline */
+    background-color: #fff; /* Set the background color to white */
+  }
+  
+  /* Styling for the Draft.js editor content area */
+  .public-DraftEditor-content {
+    width: 53rem; 
+    height: 30rem;/* Make the editor take full width of the container */
+    padding: 15px; /* Add padding inside the editor */
+    font-size: 1rem; /* Set a standard font size */
+    line-height: 1.6; /* Increase line height for readability */
+    border: 2px solid #ddd; /* Add a light gray border */
+    border-radius: 6px; /* Round the corners */
+    background-color: #f9f9f9; /* Set a light background color */
+    color: #333; /* Set text color */
+    box-sizing: border-box; /* Include padding in width calculation */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    transition: background-color 0.3s ease; /* Smooth transition for theme changes */
+  }
+  
+  /* Placeholder styling inside the editor */
+  .public-DraftEditor-placeholder {
+    color: #aaa; /* Light gray color for placeholder text */
+    font-style: italic; /* Italicize the placeholder text */
+  }
+  
+  /* Styling for the Save button */
+  .save-button {
+    width: 200px; /* Set a fixed width for the button */
+    padding: 12px; /* Add padding inside the button */
+    margin-top: 20px; /* Add spacing above the button */
+    font-size: 1rem; /* Set a standard font size */
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center the text inside the button */
+    background-color: #007bff; /* Set a blue background color */
+    color: white; /* Set text color to white */
+    border: none; /* Remove the default border */
+    border-radius: 6px; /* Round the corners */
+    cursor: pointer; /* Change the cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  /* Hover effect for the Save button */
+  .save-button:hover {
+    background-color: #0056b3; /* Darken the blue color on hover */
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .editor-container {
+      width: 90%; /* Reduce the container width for smaller screens */
+      padding: 15px; /* Reduce padding for smaller screens */
+    }
+  
+    .editor-title {
+      font-size: 1.2rem; /* Decrease font size for the title input */
+    }
+  
+    .public-DraftEditor-content {
+      font-size: 0.9rem; /* Decrease font size for the editor content */
+    }
+  
+    .save-button {
+      width: 100%; /* Make the button full width on smaller screens */
+    }
+  }
+  
